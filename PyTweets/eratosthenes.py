@@ -1,10 +1,7 @@
 import math
 
 
-# noinspection PyTypeChecker
-
-
-def guess(n):
+def primes(n):
     a = [True] * (n + 1)
     for i in range(2, int(math.sqrt(n))):
         exclude = (j for j in range(i * i, n + 1, i) if a[i])
@@ -13,6 +10,4 @@ def guess(n):
         if a[i]: print(i)
 
 
-
-
-guess(100)
+primes(100)
