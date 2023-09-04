@@ -11,5 +11,6 @@ class Example:
         return self.counter
 
 
+
 print(Example().cubed(3))
 print(Example().increment_counter_by(10))
